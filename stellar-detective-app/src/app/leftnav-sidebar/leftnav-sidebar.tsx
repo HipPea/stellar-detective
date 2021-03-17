@@ -4,13 +4,12 @@ import { FaTachometerAlt, FaWarehouse } from 'react-icons/fa'
 
 
 type LeftnavSidebarProperties = {
-  className: string
+  className: string,
+  collapsed: boolean
 }
-function LeftnavSidebar({className}: LeftnavSidebarProperties) {
-  console.log(className);
-  
+function LeftnavSidebar({className, collapsed}: LeftnavSidebarProperties) {
   return (
-    <ProSidebar className={className}>
+    <ProSidebar className={className} collapsed={collapsed}>
         <div className="leftnav-sidebar">
             <Menu iconShape="circle">
                 <MenuItem icon={<FaTachometerAlt />}>Dashboard</MenuItem>

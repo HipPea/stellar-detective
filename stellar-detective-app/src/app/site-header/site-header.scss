@@ -6,6 +6,7 @@ $header-hover-color: $highlight-color;
 $header-hover-background-color: $seven-color;
 
 .header {
+  display: block;
   height: 100%;
   background-color: $header-background-color;
   color: $header-font-color;
@@ -19,27 +20,36 @@ $header-hover-background-color: $seven-color;
 
     .site-title-container {
       display: inline-block;
+      width: auto;
+      float: right;
+      margin-right: 20px;
+      margin-top: 2px;
       .site-title {
         text-align: end;
         vertical-align: middle;
       }
     }
 
-    .sidebar-expander {
+    .button-container {
+      display: inline-block;
       margin: auto;
-      vertical-align: middle;
-      height: 48px;
       width: 48px;
-      min-width: 0px;
-      font-size: 24px;
-      border-radius: 50%;
-      color: $header-font-color;
+      .sidebar-expander {
+        margin: auto;
+        vertical-align: middle;
+        height: 48px;
+        width: 48px;
+        min-width: 0px;
+        font-size: 24px;
+        border-radius: 50%;
+        color: $header-font-color;
 
-      &:hover {
-        color: $header-hover-color;
-        background-color: $header-hover-background-color;
-        .MuiButton-label {
-          animation: swing ease-in-out 0.5s 1 alternate;
+        &:hover {
+          color: $header-hover-color;
+          background-color: $header-hover-background-color;
+          .MuiButton-label {
+            animation: swing ease-in-out 0.5s 1 alternate;
+          }
         }
       }
     }
