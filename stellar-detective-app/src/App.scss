@@ -1,0 +1,61 @@
+#root {
+  height: 100%;
+}
+
+@import "~react-pro-sidebar/dist/scss/styles.scss";
+@import "styles/base-color-pallette.scss";
+
+.App {
+  display: flex;
+  position: relative;
+
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  background-color: $dark-color;
+  color: $dark-font-color;
+  text-align: center;
+  font-size: calc(10px + 2vmin);
+
+  $header-height: 64px;
+  $footer-height: 128px;
+
+  .App-sidebar {
+    height: 100%;
+    background-color: $darkest-color;
+    color: $darkest-font-color;
+    .pro-sidebar-inner {
+      background: $darkest-color;
+    }
+  }
+
+  .App-content {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+
+    background-color: $dark-color;
+    color: $dark-font-color;
+  }
+
+  .App-header {
+    height: $header-height;
+    width: 100%;
+  }
+
+  .App-body {
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+    background-color: $light-color;
+    color: $light-font-color;
+  }
+
+  .App-footer {
+    bottom: 0;
+    height: $footer-height;
+    width: 100%;
+  }
+}
