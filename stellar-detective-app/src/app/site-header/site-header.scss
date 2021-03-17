@@ -1,1 +1,36 @@
-@import "./styles/base-color-pallette.scss";
+@import "./styles/style.scss";
+
+$header-font-color: $six-font-color;
+$header-background-color: $six-color;
+$header-hover-color: $highlight-color;
+$header-hover-background-color: $seven-color;
+
+.header {
+  height: 100%;
+  background-color: $header-background-color;
+  color: $header-font-color;
+
+  .header-content {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: justify;
+    width: 100%;
+    .sidebar-expander {
+      margin-left: 8px;
+      height: 48px;
+      width: 48px;
+      min-width: 0px;
+      font-size: 24px;
+      border-radius: 50%;
+      color: $header-font-color;
+
+      &:hover {
+        color: $header-hover-color;
+        background-color: $header-hover-background-color;
+        .MuiButton-label {
+          animation: swing ease-in-out 0.5s 1 alternate;
+        }
+      }
+    }
+  }
+}

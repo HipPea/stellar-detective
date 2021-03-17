@@ -10,9 +10,15 @@ type SiteHeaderProperties = {
   className: string
 }
 function SiteHeader({className}: SiteHeaderProperties) {
+  console.log(className);
+  
   return (
-    <header className="{className} header">
-        <Button className="sidebar-expander"><FaBars /></Button >
+    <header className={className}>
+        <div className="header">
+          <div className="header-content">
+            <Button className="sidebar-expander"><FaBars /></Button >
+          </div>
+        </div>
     </header>
   );
 }

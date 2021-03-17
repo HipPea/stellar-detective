@@ -1,0 +1,15 @@
+@import "./styles/base-color-pallette.scss";
+
+$sidebar-bg-color: $nine-color;
+$sidebar-color: $seven-color;
+$highlight-color: $primary-color;
+$submenu-bg-color: $seven-color;
+$submenu-bg-color-collapsed: $seven-color;
+
+$sidebar-width: 270px;
+$sidebar-collapsed-width: 80px;
+
+$icon-bg-color: $seven-color;
+$icon-size: 35px;
+
+@import "~react-pro-sidebar/dist/scss/styles.scss";
