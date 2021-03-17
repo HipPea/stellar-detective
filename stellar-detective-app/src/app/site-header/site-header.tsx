@@ -15,6 +15,9 @@ function SiteHeader({className}: SiteHeaderProperties) {
         <div className="header">
           <div className="header-content">
             <Button className="sidebar-expander"><FaBars /></Button >
+            <div className="site-title-container"> 
+              <label className="site-title">Stellar Detective</label>
+            </div>
           </div>
         </div>
     </header>

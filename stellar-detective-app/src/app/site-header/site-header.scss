@@ -12,11 +12,22 @@ $header-hover-background-color: $seven-color;
 
   .header-content {
     display: inline-block;
+    text-align: start;
     vertical-align: middle;
-    text-align: justify;
     width: 100%;
+    margin: 8px;
+
+    .site-title-container {
+      display: inline-block;
+      .site-title {
+        text-align: end;
+        vertical-align: middle;
+      }
+    }
+
     .sidebar-expander {
-      margin-left: 8px;
+      margin: auto;
+      vertical-align: middle;
       height: 48px;
       width: 48px;
       min-width: 0px;

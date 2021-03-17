@@ -3,14 +3,10 @@ import './App.scss';
 import SiteHeader from './site-header/site-header';
 import LeftnavSidebar from './leftnav-sidebar/leftnav-sidebar';
 
-// Sidebar Imports
-import { ProSidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
-import { FaTachometerAlt, FaWarehouse } from 'react-icons/fa'
-
 function App() {
   return (
     <div className="app">
-      
+       
       <LeftnavSidebar className="app-sidebar" />
 
       <div className="app-content">

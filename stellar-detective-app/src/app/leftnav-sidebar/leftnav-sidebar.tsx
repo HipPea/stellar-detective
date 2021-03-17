@@ -1,6 +1,4 @@
-import React from 'react';
 import './leftnav-sidebar.scss';
-import Button from '@material-ui/core/Button';
 import { ProSidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
 import { FaTachometerAlt, FaWarehouse } from 'react-icons/fa'
 
