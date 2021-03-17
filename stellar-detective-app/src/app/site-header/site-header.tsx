@@ -1,8 +1,6 @@
 import React from 'react';
 import './site-header.scss';
 import Button from '@material-ui/core/Button';
-
-// Sidebar Imports
 import { FaBars } from 'react-icons/fa'
 
 

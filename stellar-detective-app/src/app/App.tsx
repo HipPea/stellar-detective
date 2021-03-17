@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.scss';
 import SiteHeader from './site-header/site-header';
+import LeftnavSidebar from './leftnav-sidebar/leftnav-sidebar';
 
 // Sidebar Imports
 import { ProSidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
@@ -10,15 +11,7 @@ function App() {
   return (
     <div className="app">
       
-      <ProSidebar className="app-sidebar">
-        <Menu iconShape="circle">
-          <MenuItem icon={<FaTachometerAlt />}>Dashboard</MenuItem>
-          <SubMenu title="Insights" icon={<FaWarehouse />}>
-            <MenuItem>Component 1</MenuItem>
-            <MenuItem>Component 2</MenuItem>
-          </SubMenu>
-        </Menu>
-      </ProSidebar>
+      <LeftnavSidebar className="app-sidebar" />
 
       <div className="app-content">
 
