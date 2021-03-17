@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.scss';
+import SiteHeader from './site-header/site-header';
 
 // Sidebar Imports
 import { ProSidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
@@ -7,10 +8,10 @@ import { FaTachometerAlt, FaWarehouse } from 'react-icons/fa'
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       
-      <ProSidebar className="App-sidebar">
-        <Menu iconShape="square">
+      <ProSidebar className="app-sidebar">
+        <Menu iconShape="circle">
           <MenuItem icon={<FaTachometerAlt />}>Dashboard</MenuItem>
           <SubMenu title="Insights" icon={<FaWarehouse />}>
             <MenuItem>Component 1</MenuItem>
@@ -19,16 +20,14 @@ function App() {
         </Menu>
       </ProSidebar>
 
-      <div className="App-content">
+      <div className="app-content">
 
-        <header className="App-header">
+        <SiteHeader className="app-header" />
 
-        </header>
-
-        <body className="App-body">
+        <body className="app-body">
         </body>
 
-        <footer className="App-footer">
+        <footer className="app-footer">
   test
         </footer>
       </div>

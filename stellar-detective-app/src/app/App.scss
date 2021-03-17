@@ -3,9 +3,9 @@
 }
 
 @import "~react-pro-sidebar/dist/scss/styles.scss";
-@import "styles/base-color-pallette.scss";
+@import "./styles/base-color-pallette.scss";
 
-.App {
+.app {
   display: flex;
   position: relative;
 
@@ -13,47 +13,44 @@
   height: 100vh;
   overflow: hidden;
 
-  background-color: $dark-color;
-  color: $dark-font-color;
+  background-color: $six-color;
+  color: $six-font-color;
   text-align: center;
   font-size: calc(10px + 2vmin);
 
   $header-height: 64px;
   $footer-height: 128px;
 
-  .App-sidebar {
+  .app-sidebar {
     height: 100%;
-    background-color: $darkest-color;
-    color: $darkest-font-color;
+    background: $nine-color;
+    color: $nine-font-color;
     .pro-sidebar-inner {
-      background: $darkest-color;
+      background: $nine-color;
     }
   }
 
-  .App-content {
+  .app-content {
     display: block;
     width: 100%;
     height: 100%;
     overflow-y: scroll;
-
-    background-color: $dark-color;
-    color: $dark-font-color;
   }
 
-  .App-header {
+  .app-header {
     height: $header-height;
     width: 100%;
   }
 
-  .App-body {
+  .app-body {
     height: 100%;
     min-height: 100%;
     width: 100%;
-    background-color: $light-color;
-    color: $light-font-color;
+    background-color: $three-color;
+    color: $three-font-color;
   }
 
-  .App-footer {
+  .app-footer {
     bottom: 0;
     height: $footer-height;
     width: 100%;
