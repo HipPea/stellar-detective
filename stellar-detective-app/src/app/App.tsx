@@ -1,6 +1,8 @@
 import React, { useState }  from 'react';
 import './App.scss';
 import SiteHeader from './site-header/site-header';
+import SiteViewport from './site-viewport/site-viewport';
+import SiteFooter from './site-footer/site-footer';
 import LeftnavSidebar from './leftnav-sidebar/leftnav-sidebar';
 
 function App() {
@@ -16,11 +18,9 @@ function App() {
       <div className="app-content">
         <SiteHeader className="app-header" sidebarCollapsed={sidebarCollapsed} handleSidebarCollapseChange={handleSidebarCollapseChange} />
 
-        <body className="app-body">
-        </body>
+        <SiteViewport className="app-body" />
 
-        <footer className="app-footer">
-        </footer>
+        <SiteFooter className="app-footer" />
       </div>
 
     </div>

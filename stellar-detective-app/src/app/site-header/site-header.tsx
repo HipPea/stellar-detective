@@ -10,8 +10,6 @@ type SiteHeaderProperties = {
   handleSidebarCollapseChange: (value:boolean) => any
 }
 function SiteHeader({className, sidebarCollapsed, handleSidebarCollapseChange}: SiteHeaderProperties) {
-  console.log(className);
-  
   return (
     <header className={className}>
         <div className="header">
