@@ -18,6 +18,7 @@
     "react-dom": "^17.0.1",
     "react-icons": "^4.2.0",
     "react-pro-sidebar": "^0.6.0",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.1"
   },
@@ -46,6 +47,7 @@
     ]
   },
   "devDependencies": {
+    "@types/react-router-dom": "^5.1.7",
     "ts-node": "^9.1.1",
     "tsc": "^1.20150623.0",
     "tslint": "^6.1.3",
